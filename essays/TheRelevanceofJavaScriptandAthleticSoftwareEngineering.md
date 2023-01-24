@@ -7,7 +7,6 @@ date: 2023-01-18
 published: true
 labels:
   - GitHub
-summary: "A personal reflection on learning Javascript and a new learning style."
 ---
 
 
