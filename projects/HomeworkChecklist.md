@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: https://www.pngkit.com/png/detail/44-449540_checklist-602x500-homework-png-clipart.png
+image: img/44-449540_checklist-602x500-homework-png-clipart.jpg
 title: "Homework Checklist"
 date: 2023
 published: true
