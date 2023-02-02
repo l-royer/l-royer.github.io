@@ -23,12 +23,12 @@
       "name": "Languages and Frameworks",
       "keywords": [ "C", "C++", "Java", "Javascript" ]
     }
-[ 
+{::comment}
   { 
-//      "name": "Toolsets/OS",
-//      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
-//    } 
-]: #  
+      "name": "Toolsets/OS",
+      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+    } 
+{:/comment} 
   
   
   ],
