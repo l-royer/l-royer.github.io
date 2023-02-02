@@ -43,6 +43,8 @@
       ]
     }
   ],
+
+{::comment}
 //  "work": [
 //    {
 //      "company": "UH Manoa Board of Publications",
@@ -69,6 +71,9 @@
 //      ]
 //    }
 //  ],
+{:/comment}
+ 
+ 
   "volunteer": [
     {
       "organization": "Technology Outreach Hawaii (TORCH): ICSpark",
@@ -95,6 +100,8 @@
       ]
     }
   ],
+
+{::comment}
 //  "awards": [
 //    {
 //      "title": "B+ Scholarship",
@@ -109,6 +116,9 @@
 //      "summary": "My team won first place in 2015.  See my portfolio site for more details."
 //    }
 //  ],
+{:/comment}
+ 
+ 
   "references": [
     {
       "name": "Available upon request"
