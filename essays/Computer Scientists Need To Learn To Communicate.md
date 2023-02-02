@@ -8,7 +8,10 @@ published: true
 labels:
   - GitHub
 ---  
-##	 				 Computer Scientists Need To Learn To Communicate
+
+
+ ##                 Computer Scientists Need To Learn To Communicate
+
   
     On a fundamental level, the basic command of language is essential to any modern-day workforce that relies on social competency. As a new computer scientist, the limitations of individuals’ communication skills have never been more apparent. In such an incredibly abstract subject, the ability to communicate in specific and detailed components is a necessity. In computer science, we must navigate intangible concepts that cannot be physically perceived, in varying languages, none of which are native to humans. When one programmer communicates a programming problem to another, they are often actually attempting to communicate a logical sequence, something that can only be evaluated using metacognition. Thus, it is imperative that scientists in such a field refine and clarify their qualms as efficiently as possible. “Smart” and “not smart” questions are therefore a natural conclusion of such a process.
   
