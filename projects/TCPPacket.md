@@ -16,6 +16,8 @@ summary: "A program that reads binary data of a TCP header and generates a respo
   <img width="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/TCP_header.png/640px-TCP_header.png" class="img-thumbnail" >
 </div>
 
+# TCP Header
+
 This program reads in binary files containing TCP request headers as input, outputs the original header information, generates a new header based off of the request header, and outputs the generated data into a new file. This program does this using only bitwise operators and without any string functions. A readfile function, printheader function, makeheader function, and writefile function is used to read, store, manipulate, and output binary data. The printheader function states the Source Port, Destination Port, Sequence Number, Acknowledgement Number, and Control Bits values of the header. The makeheader function uses bitwise operators to check the source port and control bits, and modifies the source, destination, acknowledgement, sequence and control bit values.
 
 This was an individual project for ICS212, written in C, meant to demonstrate how binary data is read, written, and manipulated. Given the expected output, I began by studying the structure of a TCP header and how it formats 160-bit long data. After learning what bit positions corresponded to each TCP component, I first wrote the printheader function and learned how to parse hexadecimal data. I wrote the makeheader function similarly to the printheader function, and the readfile and writefile functions followed. 
