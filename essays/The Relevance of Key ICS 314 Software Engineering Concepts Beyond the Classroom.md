@@ -9,6 +9,10 @@ labels:
   - GitHub
 ---
 
+<div class="text-center p-4">
+  <img src="https://www.scnsoft.com/blog-pictures/web-apps/web_application_framework-01.png" class="img-thumbnail" >
+</div>
+
 
  #                The Relevance of Key ICS 314 Software Engineering Concepts Beyond the Classroom
  
