@@ -10,6 +10,11 @@ labels:
 ---  
 
 
+<div class="text-center p-4">
+  <img src="https://www.cs.toronto.edu/~lczhang/csc290_20191/files/clarity.gif" class="img-thumbnail" >
+</div>
+
+
  #                Computer Scientists Need To Learn To Communicate
 
   
