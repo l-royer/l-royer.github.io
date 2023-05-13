@@ -9,8 +9,11 @@ labels:
   - GitHub
 ---  
 
+<div class="text-center p-4">
+  <img src="https://cdn-media-1.freecodecamp.org/images/1*bNP7DQt6uNDUQ5VLkrm2sQ.png" class="img-thumbnail" >
+</div>
 
-## We Should Standardize Our Standards
+# We Should Standardize Our Standards
 
   
  If proper command of the English language is determined by precise diction, syntax, and flow, then why should computer programming languages be exempt from such convention? The process of meeting coding standards may be tedious and time-consuming, but standards are necessary for clarity. Some coding standards exist purely for stylistic choices, and the practicality of these requirements are reasonably debated. Variations in style don’t affect how your computer reads your code, and some may disagree with what is considered to be more visually efficient. But how much time is wasted when a programmer attempts to decipher unclear code? How many mistakes are unnecessarily created because of the limitations of poor readability? If style didn’t matter, then code could be written the same way essays are: in long blocks of jumbled words, separated only by single-spaces and the occasional paragraph indentation. However, the general consensus of the programming community is opposed to this, and for good reason. 
