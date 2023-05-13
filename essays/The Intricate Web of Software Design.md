@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Reflection on Design Patterns"
+title: "The Intricate Web of Software Design"
 # All dates must be YYYY-MM-DD format!
 date: 2023-04-26
 published: true
@@ -10,7 +10,7 @@ labels:
 ---  
 
 
-# Reflection on Design Patterns
+# The Intricate Web of Software Design
 
   Have you ever tried to compose software for a real-world application requiring numerous interacting components and classes? If so, you may have realized what once seemed like a straightforward problem with a logical approach often quickly becomes a convoluted, spider’s web of information overload. In these scenarios, the best way out of these logical mazes is through an established path. Such pathways are essentially design patterns in programming. By following the conventions of previously established solutions, much time and headaches can be solved when it comes to designing software architecture.
   
