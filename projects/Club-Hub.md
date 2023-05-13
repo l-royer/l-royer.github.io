@@ -16,7 +16,7 @@ summary: "My team developed a website offering every club at UH Manoa for studen
 # Club-Hub: Find your club at UH Manoa
 
 <div class="text-center p-4">
-  <img src="../9c0d82d7-975d-4a83-9d94-b30667351c33.png" class="img-thumbnail" >
+  <img src="../img/9c0d82d7-975d-4a83-9d94-b30667351c33.png" class="img-thumbnail" >
 </div>
 
 In this group project, the objective was to create a project solving a problem applicable to UH Manoa students. This was a website geared towards students looking for a compiled registry of all of the clubs a student could join. The student not only has the ability to view every club available to students, but also offers the student the option of saving the clubs they are interested in to their profile. Each club contains its own webpage, consisting of a photo, an accurate description of the club, its goals, and the contact information of its officers. After the user adds a club they are interested in to their profile, they also have the ability to see the clubs associated events. The website also has admin capabilities, in which the admin can easily add, edit, and delete clubs, as well as add, edit, and delete events.
