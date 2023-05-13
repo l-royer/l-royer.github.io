@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Bank Database | Liliana Royer | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/l-royer.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Liliana Royer | Professional Portfolio">
+    <meta property="og:url" content="https://l-royer.github.io/projects/BankDatabase.html">
+    <meta property="og:title" content="Bank Database | Liliana Royer | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/l-royer.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Bank Database | Liliana Royer | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Liliana Royer</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Bank Database</h1>
+ <div class="text-center p-4">
+  <img width="200px" src="https://cdn.xxl.thumbs.canstockphoto.com/bank-account-concept-vector-illustration-customer-sitting-with-laptop-and-bank-with-credit-card-and-vector-clipart_csp66403603.jpg" class="img-thumbnail" />
+</div>
+
+<h1 id="implementing-a-bank-database-in-c">Implementing a “Bank Database” in C</h1>
+<p>Bank database is a project that takes bank profile records and stores them in a database. The user-interface presents a welcome screen and menu to the user, prompting them to make a selection by typing in any of the letters sequential order in an option. The menu options consisted of addRecord, findRecord, printAllRecords, deleteRecord, and quit functions. User input was rejected if the user typed letters that didn’t match an option; e.g., ‘q’, ‘qu’, ‘qui’, and ‘quit’ were valid inputs, but ‘quitter’, ‘qwit’ or any input consisting of numbers were not. addRecord prompted the user to enter an account number, name, and address, each of which had specific valid input parameters. Invalid input attempts led to prompting the user to re-enter their input. Each function was stored and computed in the database file. Account information was stored using a linked list of struct records, containing pointers to the next record. Each record was stored in numerical order, and this order was retained when an account was deleted.Upon quitting, the program wrote the new information to a file and cleaned up any heap memory. Upon every initiation of the program, the file was read from and accessed by the database to display information to the user. The program also had a debug option, which would be enabled in the command line argument of the program’s execution.</p>
+
+<p>This was a single-person ICS212 project, written in C, meant to showcase structs, pointers, headers, and file I/O methods. With brief descriptions for what was expected for each method, the C Programming Language textbook was my single primary resource. We had the freedom to decide what methods we could use, with restrictions, and how we would implement our linked lists with our add and delete functions.</p>
+
+<p>This challenging, months-long project taught me how data is stored and manipulated at the smallest level. IO streams, buffers, memory leaks, and pointers were all new concepts to me, and integral to making a working program. Bank database was also edited using VI on UNIX, which also required some research to learn how to use. The nuances between various data structures and their limitations became more pronounced for me, and I now understand the complexity and detail associated with how C processes data.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

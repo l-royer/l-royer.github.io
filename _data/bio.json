@@ -1,0 +1,69 @@
+{
+  "basics": {
+    "name": "Liliana Royer",
+    "label": "Student",
+    "picture": "https://github.com/l-royer.png",
+    "email": "lroyer@hawaii.edu",
+    "phone": "424-279-0820",
+    "website": "https://l-royer.github.io",
+    "summary": "I am majoring in Computer Science, B.S., in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
+    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "l-royer", "url": "http://github.com/l-royer" },
+      { "network": "linkedin", "username": "Liliana Royer", "url": "http://linkedin.com/in/liliana-royer-387b74261" }
+    ]
+  },
+  "interests": [
+    { "name": "Software Engineering" },
+    { "name": "Data Science" },
+    { "name": "Psychology" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "C++", "Java", "Javascript" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (expected Spring, 2024)",
+      "studyType": "B.S.",
+      "startDate": "2021-09-01",
+      "endDate": "Present",
+      "courses": [
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Technology Outreach Hawaii (TORCH): ICSpark",
+      "website": "https://icspark.github.io/",
+      "position": "Mentor",
+      "startDate": "2022-09-01",
+      "endDate": "Present",
+      "summary": "Provide coding mentorship to 6th-12th graders in a fun, motivational environment.",
+      "highlights": [
+        "Educate students on the basics of HTML, CSS, and Javascript.",
+        "Guide students to complete several projects over the course of a semester."
+      ]
+    },
+    {
+      "organization": "Kapolei Public Library",
+      "website": "",
+      "position": "Volunteer",
+      "startDate": "11/2022",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Trained in and conducted shelving, cataloguing, and out-processing of books, CD's/DVD's, periodicals, and other media.",
+        "Aided in library-hosted community events."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}

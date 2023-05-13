@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Club-Hub | Liliana Royer | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/l-royer.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Liliana Royer | Professional Portfolio">
+    <meta property="og:url" content="https://l-royer.github.io/projects/Club-Hub.html">
+    <meta property="og:title" content="Club-Hub | Liliana Royer | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/l-royer.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Club-Hub | Liliana Royer | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Liliana Royer</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Club-Hub</h1>
+ <h1 id="club-hub-find-your-club-at-uh-manoa">Club-Hub: Find your club at UH Manoa</h1>
+
+<div class="text-center p-4">
+  <img src="../img/9c0d82d7-975d-4a83-9d94-b30667351c33.png" class="img-thumbnail" />
+</div>
+
+<p>In this group project, the objective was to create a project solving a problem applicable to UH Manoa students. This was a website geared towards students looking for a compiled registry of all of the clubs a student could join. The student not only has the ability to view every club available to students, but also offers the student the option of saving the clubs they are interested in to their profile. Each club contains its own webpage, consisting of a photo, an accurate description of the club, its goals, and the contact information of its officers. After the user adds a club they are interested in to their profile, they also have the ability to see the clubs associated events. The website also has admin capabilities, in which the admin can easily add, edit, and delete clubs, as well as add, edit, and delete events.</p>
+
+<p>This project used the Bowfolios template as the base for our project. We also included the sign up/in capabilities and retained user-based role permissions depending on the role of admin or user. For this project, I was responsible for coding the add, edit, and remove club functionality. This required interfacing with the collections and publications, as well as creating new meteor methods to bypass permissions set by the boilerplate code. I learned so much about the intricacies of how such databases were stored and implemented. As our page stored over 180 clubs, it was necessary to be able to filter the clubs, which I was also responsible for. Lastly, I edited the actual design of the website itself. This was an extremely complicated project, and learning how to write code based off of code written by others previously was a tough but necessary task.</p>
+
+<p>Here is some code shows how we constructed the schema for the clubs in the collection:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// The name of this collection.</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">ClubsCollection</span><span class="dl">'</span><span class="p">;</span>
+    <span class="c1">// Define the Mongo collection.</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">collection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Mongo</span><span class="p">.</span><span class="nx">Collection</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="c1">// Define the structure of each document in the collection.</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">schema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SimpleSchema</span><span class="p">({</span>
+      <span class="na">name</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="na">slug</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="na">abbreviation</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="na">topics</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">Array</span> <span class="p">},</span>
+      <span class="dl">'</span><span class="s1">topics.$</span><span class="dl">'</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">type</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+        <span class="na">allowedValues</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Academic</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Social</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ICS</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Service</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Leisure</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Professional</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Engineering</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Recreational</span><span class="dl">'</span><span class="p">],</span>
+      <span class="p">},</span>
+      <span class="na">description</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="na">goals</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="na">email</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="na">logo</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+    <span class="p">});</span>
+    <span class="c1">// Ensure collection documents obey schema.</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">collection</span><span class="p">.</span><span class="nx">attachSchema</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">schema</span><span class="p">);</span>
+    <span class="c1">// Define names for publications and subscriptions</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">userPublicationName</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">.publication.user`</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">adminPublicationName</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">.publication.admin`</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<p>You can visit the website at https://club-hub.site/ .</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

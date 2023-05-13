@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="TCP Packet | Liliana Royer | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/l-royer.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Liliana Royer | Professional Portfolio">
+    <meta property="og:url" content="https://l-royer.github.io/projects/TCPPacket.html">
+    <meta property="og:title" content="TCP Packet | Liliana Royer | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/l-royer.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>TCP Packet | Liliana Royer | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Liliana Royer</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">TCP Packet</h1>
+ <div class="text-center p-4">
+  <img width="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/TCP_header.png/640px-TCP_header.png" class="img-thumbnail" />
+</div>
+
+<h1 id="tcp-header">TCP Header</h1>
+
+<p>This program reads in binary files containing TCP request headers as input, outputs the original header information, generates a new header based off of the request header, and outputs the generated data into a new file. This program does this using only bitwise operators and without any string functions. A readfile function, printheader function, makeheader function, and writefile function is used to read, store, manipulate, and output binary data. The printheader function states the Source Port, Destination Port, Sequence Number, Acknowledgement Number, and Control Bits values of the header. The makeheader function uses bitwise operators to check the source port and control bits, and modifies the source, destination, acknowledgement, sequence and control bit values.</p>
+
+<p>This was an individual project for ICS212, written in C, meant to demonstrate how binary data is read, written, and manipulated. Given the expected output, I began by studying the structure of a TCP header and how it formats 160-bit long data. After learning what bit positions corresponded to each TCP component, I first wrote the printheader function and learned how to parse hexadecimal data. I wrote the makeheader function similarly to the printheader function, and the readfile and writefile functions followed.</p>
+
+<p>The main focus of this project was to demonstrate the differences in manipulating binary data. Accessing the information of the TCP request header and breaking it down into human readable information required knowledge of the TCP structure that was entirely new to me. Generating a TCP header required hexadecimal calculations, the use of unsigned data types, and generalizable bitwise solutions. File IO functions also needed to be able to read and write binary data as opposed to text data. This project gave me a glimpse into TCP and computer networking while also allowing me to become very familiar with binary data.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
