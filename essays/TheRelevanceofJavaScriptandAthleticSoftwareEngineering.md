@@ -9,8 +9,7 @@ labels:
   - GitHub
 ---
 
-
- #                 The Relevance of JavaScript and Athletic Software Engineering
+# The Relevance of JavaScript and Athletic Software Engineering
 
   As a relatively new student aiming to improve my competency within the computer science field, I recognize the significance of studying JavaScript and utilizing the athletic software engineering learning style. The “Basic JavaScript” modules on freeCodeCamp provided me with my first major experience with JavaScript. I previously had a short encounter with the language when I explored how JavaScript, CSS, and HTML worked together to display a very basic webpage. I found that moment, and the few JS-based WODS we’ve done thus far in this class, to be of the more exciting moments of coding for me. Although I did not know how to code and did not have any computer science background, I switched my major to ICS last January on a whim. While I glean satisfaction from coding in the same way I do from solving puzzles, my experience with coding has been limited to the abstract, small-scale assignments from introductory computer science courses. JavaScript, as the necessary component of website development, lets me experience coding on a practical and “real” level. I enjoy seeing the immediate, real-time results of what I type, and that I can actually extrapolate my code to a relevant application.
 
