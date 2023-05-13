@@ -13,9 +13,7 @@ labels:
   <img src="https://www.scnsoft.com/blog-pictures/web-apps/web_application_framework-01.png" class="img-thumbnail" >
 </div>
 
-
- #                The Relevance of Key ICS 314 Software Engineering Concepts Beyond the Classroom
- 
+# The Relevance of Key ICS 314 Software Engineering Concepts Beyond the Classroom
  
  ICS 314 offered me, for the first time, the ability to actually apply the programming knowledge and techniques that I have now been studying for a year. The practical application of these concepts are invaluable, and I lacked the opportunity to exercise these skills previously. This class enabled me to learn and utilize functional programming, development environments, coding standards, and user interface frameworks. Beyond the classroom, these concepts play a crucial role in the success and efficiency of software development. This essay explores the significance of functional programming, development environments, coding standards, and user interface frameworks in software engineering and their practical applications beyond academic settings.
 
