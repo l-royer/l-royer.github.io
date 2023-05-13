@@ -10,7 +10,7 @@ labels:
   - CSS
   - JavaScript
   - React
-summary: "My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition."
+summary: "My team developed a website offering every club at UH Manoa for students to easily view and save."
 ---
 
 # Club-Hub: Find your club at UH Manoa
