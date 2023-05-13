@@ -9,6 +9,10 @@ labels:
   - GitHub
 ---  
 
+<div class="text-center p-4">
+  <img src="https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Schaubilder/applying-design-patterns.png" class="img-thumbnail" >
+</div>
+
 
 # The Intricate Web of Software Design
 
